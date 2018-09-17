@@ -1,0 +1,53 @@
+.register2018 {
+    &-ticket {
+        &--border {
+            background: #FFFFFF;
+            border: 2px solid #291E35;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        &--spacing {
+
+            @include media ('<sm') {
+                padding: 20px 30px;
+            }
+
+            @include media ('<448px') {
+                padding: 20px 24px 20px 24px;
+            }
+
+            @include media ('>sm') {
+                padding: 28px 65px 28px 52px;
+            }
+        }
+
+        &--content {
+            margin-top: -5px;
+
+            @include media ('<sm') {
+                margin-left: 24px;
+            }
+
+            @include media ('>sm') {
+                margin-left: 35px;
+            }
+
+            &-title {
+                margin-bottom: 16px;
+            }
+
+            &-subhead__small {
+                @include media ('<448px') {
+                    display: none;
+                }
+            }
+
+            &-subhead__xsmall {
+                @include media ('>447px') {
+                    display: none;
+                }
+            }
+        }
+    }
+}
