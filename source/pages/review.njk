@@ -1,20 +1,20 @@
 <!-- app/pages/register.njk-->
-{% extends "layout-review.njk" %}
+{% extends "layout-review2018.njk" %}
 
 {% block title %}
     Review
 {% endblock %}
 {% block content %}
 
-    {% import 'macros/nav-macro.njk' as nav %}
+    {# {% import 'macros/nav-macro.njk' as nav %}
     {{nav.active('register')}}
 
     {% import 'macros/header-macro.njk' as header %}
 
-    {{header.pageNames( 'Review' )}}
+    {{header.pageNames( 'Review' )}} #}
 
-    <div class="container">
-        {% include "partials/review.njk" %}
-        {% include "partials/footer.njk" %}
+    <div class="container register2018-container">
+        {% include "partials/review2018.njk" %}
+        {# {% include "partials/footer.njk" %} #}
     </div>
 {% endblock %}

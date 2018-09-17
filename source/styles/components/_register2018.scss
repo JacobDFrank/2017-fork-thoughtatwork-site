@@ -1,6 +1,23 @@
 .register2018 {
- &-container {
-   padding-top: 72px;
-   padding-bottom: 128px;
- } 
+    &-container {
+        padding-top: 160px;
+        padding-bottom: 128px;
+    }
+
+    &-nav {
+        height: 88px;
+        width: 100%;
+        position: fixed;
+        background: #FFFFFF;
+        box-shadow: 0 3px $purpleblack;
+        overflow: hidden;
+        margin: 0 auto;
+        top: 0;
+        z-index: 10;
+    }
+
+    &-logo {
+        width: 44px;
+        display: block;
+    }
 }
