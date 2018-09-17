@@ -245,63 +245,8 @@
 </head>
 
 <body class="dotGrid-background">
-<div class="flex flex-justify-center flex-align-center register2018-nav">
-  <img
-    class="register2018-logo"
-    src="http://thoughtatwork.cias.rit.edu/assets/graphics/icons/register2018-navLogo.svg"
-  />
-  <p class="register2018-link">Thought At Work 2018 Registration</p>
-</div>
-	
-
-    
-
-    <div class="container register2018-container">
-        <script src="js/register.js"></script>
-
-<div class="container form__margin-top gridish-container--complete gridish-grid">
-    <?php if(isset($transStatus) && ($transStatus == 1 || $transStatus == 5 || $transStatus == 6 || $transStatus == 8 || $transStatus == 10)){ ?>
-
-    <h1>Thank You For Registering!</h1>
-    <br>
-<br>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<div class="">
-    <label class="label">
-        <input class="label__checkbox" type="checkbox" />
-        <span class="label__text">
-            <span class="label__check">
-                <i class="fa fa-check icon"></i>
-            </span>
-        </span>
-    </label>
-</div>
-<br><br>
-    <p>You will be receiving a confirmation email from
-        <a href="mailto:hello@thoughtatwork.org">hello@thoughtatwork.org</a>
-    </p>
-    <br>
-    <!--  -->
-
-
-    <?php }else{ ?>
-
-    <div class="text-card-default">
-        <br><br>
-        <h2 class="confirm-heading">There was a problem processing your order.</h2>
-        <br>
-        <p class="confirm-email">Please contact
-            <a href="mailto:hello@thoughtatwork.org">hello@thoughtatwork.org</a>
-        </p>
-
-    </div>
-
-    <?php } ?>
-
-</div>
-
-        
-    </div>
-
+{% include "partials/register2018-nav.njk" %}
+	{% block content %}
+ 	{% endblock %}
 	<!-- Load scripts. -->
 </body>

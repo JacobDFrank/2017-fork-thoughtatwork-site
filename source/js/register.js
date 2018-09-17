@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   $( "#registerForm #coupon" ).on("change paste keyup", function() {
-    //console.log($(this).val());
+    console.log($(this).val());
     if($(this).val().length >= 10){
 
       $.post('valid_coupon.php',{coupon: $(this).val()}, function(data){

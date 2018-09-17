@@ -1,8 +1,11 @@
+
+<!--source /templates/layout-review.njk -->
+
 <?php
 
   //print '<pre>';print_r($_POST); print '</pre>';
 
-  // header('Location: register.html');
+  // header('Location: register.php');
   use RIT\Prod\Nelnet as Nelnet;
 
   require_once('admin/config.php');
@@ -189,15 +192,15 @@
 
 
 
-  if(strtolower($coupon) == strtolower('Free0TAW17') ){
+  if(strtolower($coupon) == strtolower('free_bird_18') ){
 
     $adjustedAmount = '0';
 
-  }else if(strtolower($coupon) == strtolower('30ISBETTERTHAN40')){
+  }else if(strtolower($coupon) == strtolower('taw_early_bird_2018')){
 
     $adjustedAmount = '30';
 
-  }else if($numOrders < 100 && strtotime("1 October 2017") > strtotime('now')){
+  }else if($numOrders < 100 && strtotime("1 October 2018") > strtotime('now')){
 
     $adjustedAmount = '35';
 
@@ -265,257 +268,91 @@
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Thought At Work 2018</title>
+  <meta name="keywords" content="sample, something">
+  <meta name="format-detection" content="telephone=no">
   <meta charset="utf-8">
-  <title>Thought At Work - Register</title>
-  <meta name="description" content="Our Website">
-  <meta name="author" content="Thought at Work">
+  <meta name="viewport" content="user-scalable=0, initial-scale=1.0, width=device-width, maximum-scale=1, minimum-scale=1"
+  >
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:url" content="http://thoughtatwork.cias.rit.edu">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Thought At Work, a student-run design conference">
+  <meta property="og:description" content="Thought At Work is a three-day, student-run, student-focused design conference that takes place every October at Rochester Institute of Technology."
+  >
+  <meta property="og:image" content="http://thoughtatwork.cias.rit.edu/assets/graphics/WebBanner_TAW2018.jpg"
+  >
+  <meta property="fb:app_id" content="486507185043060">
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="@TAW_RIT">
+  <meta name="twitter:title" content="Thought At Work, a student-run design conference">
+  <meta name="twitter:description" content="Thought At Work is a three-day, student-run, student-focused design conference that takes place every October at Rochester Institute of Technology."
+  >
+  <meta name="twitter:creator" content="@TAW_RIT">
+  <meta name="twitter:image" content="http://thoughtatwork.cias.rit.edu/assets/graphics/WebBanner_TAW2018.jpg"
+  >
+  <meta name="description" content="Student-Run Design Conference">
+  <meta name="title" content="Thought at Work">
+	<link rel="icon" type="image/ico" href="assets/graphics/faviconPurple2018.png">
+	<base href="/">
+	
+	<link rel="stylesheet"
+	      type="text/css"
+	      href="styles/register.css">
+	<script type="text/javascript"
+	        src="vendors/jquery.min.js"></script>
+</head>
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<body class="dotGrid-background">
+<div class="flex flex-justify-center flex-align-center register2018-nav">
+  <img
+    class="register2018-logo"
+    src="http://thoughtatwork.cias.rit.edu/assets/graphics/icons/register2018-navLogo.svg"
+  />
+  <p class="register2018-link">Thought At Work 2018 Registration</p>
+</div>
+	
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/register.css">
+    
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="http://thoughtatwork.cias.rit.edu/img/favicon.png">
+    <div class="container register2018-container">
+        <script src="js/register.js"></script>
 
+<a href="register">
+    <div id="flag"></div>
+</a>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-<!-- <script src="../constantlyUpdatingScript.js"></script> -->
-
-	</head>
-	<body>
-        <!--Web Team
-
-    Spiritual Leader:Jacob Frank
-    Moral Support: Cole Johnson
-    Loopy Lady: Amy Pham
-    Dude With Beard: Conner Hasbrouck
-
-    In Loving Memory of Sara Artese
--->
-<nav id="nav-background-color" class="navbar navbar-fixed-top p-a-9 nav" role="navigation">
-    <div class="container-fluid navColorChange">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand title p-l-12 mobile-hide" href="index.html"><div class="tempHover">Thought at Work</div></a>
-        </div>
-        <div id="menu" class="navbar-collapse collapse navbar-inner pull-right drop-down" >
-            <span class="x">
-            <button type="button" class="navbar-toggle exit" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="close" aria-hidden="true"></i>
-            </button>
-            </span>
-            <ul class="nav navbar-nav navbar-right p-r-9 mobile-center menu-pad">
-                <li class="mobile-home"><a href="index.html">Home</a></li>
-                <li><a href="speakers.html">Speakers</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li class="text-nowrap"><a href="getready.html">Get Ready</a></li>
-                <li class="text-nowrap"><a href="about.html">About Us</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a class="nav-register menu-pad" href="register.html">Register</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!--Underline effect for current page in nav-->
-<script>
-    $('.nav').find('a').each(function(){
-        var href = document.location.href;
-        var fileName = href.substr(href.lastIndexOf('/') + 1);
-        if($(this).attr('href') == fileName && fileName != "index.html"){
-            if(fileName == "register.html")
-                $(this).addClass('currentRegister');
-            else
-                $(this).addClass('currentPage');
-        }
-    });
-</script>
-
- <!--  -->
-		<!-- HEADER / SPLASH -->
-		<div class="container-fluid about-splash-words">
-			<div class="row">
-				<div class="col-lg-12 ">
-					<h1 class="title">Register</h1>
-				</div>
-			</div>
-		</div>
-     <div class="navOff"></div>
-
-    <div class="container-fluid contact-top-buffer about-mobile-top">
-      <div class="row about-margins">
-        <div class="col-lg-10 col-md-offset-1">
-
-          <a href="register"><div id="flag"></div></a>
-
-           <section id="register" class="section-fullscreen light">
-          	<div class="section-content">
-          		<h2 class="elliot">Register</h2>
-
-                  <p class="elliot" class >Thank you for completing the first step in your registration. To make your secure credit card payment, click the button below.</p>
-                  <p class="elliot">Immediately after the payment transaction is processed, you will receive an email verifying the information you provided.</p>
-
-          <?php
+<div id="register" class="container form__margin-top gridish-container--complete gridish-grid">
+    
+    <h1>Registration review</h1>
+    <br><br>
+    <h4>Thank you for completing the first step in your registration.</h4> <br> <br>
+    <p>To make your secure credit card payment, click the button below.</p>
+    <br>
+    
+    <?php
 
 
-      	//print '<pre>';print_r($_POST);print '</pre>';
-      	echo $content;
+    //print '<pre>';print_r($_POST);print '</pre>';
+    echo $content;
 
-          ?>
+      ?>
+      
+    <br><br>
+<p>Immediately after the payment transaction is processed, you will receive an email verifying the information you provided.</p>
+</div>
 
-          	</div>
-           </section>
-
-
-        </div>
-      </div>
+        
     </div>
 
-
-    <script src="js/contactScript.js"></script>
-        <!--- Footer Include-->
-		<!-- SPONSORS -->
-<div class="container-fluid sponsors tablet-top">
-<div class="row sponsor-top">
-<!--Because tiny fish is currently not a spnsor they've been removed but this code is still here just in case-->
-<div class="center-mid">
-<div class="col-sm-3 firstRow-sponsor-images">
-    <a href="https://www.keyshot.com/" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-01.png" />
-    </a>
-        </div>
-<div class="col-sm-3">
-    <a href="http://www.autodesk.com" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-02.png" />
-    </a>
-</div>
-<div class="col-sm-3  firstRow-sponsor-images">
-    <a href="http://www.core77.com/" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-03.png" />
-    </a>
-</div>
-<div class="col-sm-3">
-    <a href="http://fitc.ca/" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-04.png" />
-    </a>
-</div>
-</div>
-</div>
-<div class="row sponsor-top mobile-remove-sponsor-top">
-<div class="center-mid">
-   <div class="col-sm-3 firstRow-sponsor-images">
-       <a href="http://www.eastman.com/" target="_blank">
-           <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-05.png" />
-        </a>
-   </div>
-<div class="col-sm-3">
-   <a href="https://www.raymondcorp.com/" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-06.png" />
-    </a>
-</div>
-<div class="col-sm-3  firstRow-sponsor-images">
-   <a href="http://www.wacom.com/" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-07.png" />
-    </a>
-</div>
-<div class="col-sm-3">
-    <a href="http://cias.rit.edu/" target="_blank">
-   <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-08.png" />
-    </a>
-</div>
-</div>
-</div>
-<div class="row sponsor-top mobile-remove-sponsor-top">
-<div class="center-mid">
-   <div class="col-sm-3 firstRow-sponsor-images">
-       <a href="http://industrialdesign.cias.rit.edu/community/idsa-student-chapter/" target="_blank">
-           <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-09.png" />
-        </a>
-   </div>
-<div class="col-sm-3">
-   <a href="http://www.tinyfishprinting.com/" target="_blank">
-           <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-10.png" />
-    </a>
-</div>
-<div class="col-sm-3  firstRow-sponsor-images">
-   <a href="https://www.stickermule.com/" target="_blank">
-       <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-11.png" />
-    </a>
-</div>
-<div class="col-sm-3">
-    <a href="http://www.javascafe.com/" target="_blank">
-       <img class="sponsor-img" src="http://thoughtatwork.cias.rit.edu/img/sponsor-logos-12.png" />
-    </a>
-</div>
-</div>
-</div>
-<div class="row tablet-bot">
-<div class="col-lg-12 sponsor-want center-mid">
-<div class="row-spacer">&nbsp;</div>
-<a href="contact.html" class="elliot-bold dark link-effect">WANT TO SPONSOR?</a>
-</div>
-</div>
-</div>
-<!-- FOOTER -->
-<footer class="tablet-top">
-<div class="container footer-nav navbar-inner">
-<div class="row">
-<div class="col-sm-10 col-md-offset-1 text-center">
-   <!-- <div class="col-sm-2"><a href="schedule.html"  class="link-effect">SCHEDULE</a></div> -->
-   <div class="col-sm-2"><a href="getready.html" class="link-effect">GET READY</a></div>
-   <div class="col-sm-2"><a href="register.html" class="link-effect">REGISTER</a></div>
-   <div class="col-sm-2 text-nowrap footer-logo-mobile"><a href="contact.html" class="link-effect">GET IN TOUCH</a></div>
-   <div class="col-sm-2 tablet-hide">
-       <div class="circle-footer"></div>
-       <div class="line-footer"></div>
-   </div>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="container footer-text">
-<div class="footer-logo"></div>
-<p class="special">Special thanks to Lorraine Justice, Josh Owen, Bruce Leonard, Adam Smith, and Benjamin Thomas</p>
-<p class="copyright">&copy; 2016 Thought At Work. All rights reserved.</p>
-</div>
-</div>
-</footer>
-<script type="text/javascript">
-   $('p').each(function(){
-   var string = $(this).html();
-   string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
-   $(this).html(string);
-});
-</script>
-
-       <script type="text/javascript" src="js/navScript.js"></script>
-	</body>
+	<!-- Load scripts. -->
+</body>
 </html>

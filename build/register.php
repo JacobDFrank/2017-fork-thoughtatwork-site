@@ -48,6 +48,13 @@
 </head>
 
 <body class="dotGrid-background">
+<div class="flex flex-justify-center flex-align-center register2018-nav">
+  <img
+    class="register2018-logo"
+    src="http://thoughtatwork.cias.rit.edu/assets/graphics/icons/register2018-navLogo.svg"
+  />
+  <p class="register2018-link">Thought At Work 2018 Registration</p>
+</div>
 	
 
     
@@ -76,18 +83,12 @@
 </div>
 
         <script type="text/javascript" src="vendors/jquery.min.js"></script>
-
+<script src="js/register.js"></script>
 
 <div>
 
     <form class="container form__margin-top gridish-container--complete gridish-grid" id="registerForm" method="post"
         action="review.php">
-
-
-        <!-- <div class="input-field grid__col grid__col--1-of-2 grid__col--m-1-of-2">
-            <input class="form__input input-text" type="text" id="first-name" name="first-name" placeholder="First Name"
-                required />
-        </div> -->
 
         <label class='flex-align-items-baseline flex-justify-between form-element__margin-bottom gridish-grid'>
             <p class='form-element__label gridish-grid__col--small--2 gridish-grid__col--xsmall--4'>
@@ -125,6 +126,19 @@
 
             <div class='form-element__margin-top form-text_input__field gridish-grid__col--small--5 gridish-grid__col--xsmall--4'>
                 <input type="email" id="email" name="email" placeholder="Email" required class='form-text_input__text' />
+            </div>
+        </label>
+
+         <label class='flex-align-items-baseline flex-justify-between form-element__margin-bottom gridish-grid'>
+            <p class='form-element__label gridish-grid__col--small--2 gridish-grid__col--xsmall--4'>
+                <strong>
+                    Confirm Email
+                    <span class='form-element__label__red'> *</span>
+                </strong>
+            </p>
+
+            <div class='form-element__margin-top form-text_input__field gridish-grid__col--small--5 gridish-grid__col--xsmall--4'>
+                <input type="email" id="email" name="email" placeholder="Confirm Email" required class='form-text_input__text' />
             </div>
         </label>
 
@@ -213,14 +227,14 @@
             </div>
         </label>
 
-        <label class='flex-align-items-baseline flex-justify-between form-element__margin-bottom gridish-grid'>
-            <p class='form-element__label gridish-grid__col--small--2 gridish-grid__col--xsmall--4'>
+        <label class='flex-align-items-baseline form-element__margin-bottom gridish-grid'>
+            <p class='form-element__label gridish-grid__col--small--2 gridish-grid__col--xsmall--2'>
                 <strong>
                     I need interpreting services
                 </strong>
             </p>
 
-            <div class='form-element__margin-top form-text_input__checkbox gridish-grid__col--small--1 gridish-grid__col--xsmall--1'>
+            <div class='gridish-padding--left form-element__margin-top form-text_input__checkbox gridish-grid__col--small--1 gridish-grid__col--xsmall--1'>
                 <input value="yes" type="checkbox" name="interpret" id="yesbox" class='form-text_input__text' />
             </div>
         </label>
@@ -247,7 +261,8 @@
             <div class='form-element__margin-top form-text_input__field gridish-grid__col--small--5 gridish-grid__col--xsmall--4'>
                 <input class="form__input input-text form-text_input__text" form-text_input__text type="text" id="coupon"
                     name="coupon" placeholder="Have a discount code?" />
-                <div class="coupon-container">
+            </div>
+            <div class="coupon-container">
                     <div class="coupon-status coupon-success">
                         Valid Coupon
                     </div>
@@ -255,31 +270,12 @@
                         Invalid Coupon
                     </div>
                 </div>
-            </div>
         </label>
-
-        <!-- <div class="input-field grid__col grid__col--1-of-2 grid__col--m-1-of-2">
-            <input class="form__input input-text" type="text" id="coupon" name="coupon" placeholder="Have a discount code?" />
-            <div class="coupon-container">
-                <div class="coupon-status coupon-success">
-                    Valid Coupon
-                </div>
-                <div class="coupon-status coupon-fail">
-                    Invalid Coupon
-                </div>
-            </div>
-        </div> -->
-        <div class="gridish-container--complete form-actionButton">
-            <button type="submit" value="SUBMIT" class="form-actionButton__text">
+        <button  value="SUBMIT" type="submit" class="gridish-container--complete form-actionButton">
+            <p class="form-actionButton__text">
                 submit
-            </button>
-        </div>
-        <!-- <div class="text-align-right">
-            <button class="flex-inline flex-align-items-center flex-justify-center action--link--button submit-link">
-                <input type="submit" value="SUBMIT" class="action--link--button grid__col grid__col--m-1-of-5" />
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </button>
-        </div> -->
+            </p>
+        </button>
     </form>
 </div>
 
