@@ -5,12 +5,16 @@
     Home
 {% endblock %}
 {% block content %}
-    {% import 'macros/nav-macro.njk' as nav %}
+<meta http-equiv="refresh" content="0.75;url=http://thoughtatwork.org/" />
+<p>
+You will be redirected to http://thoughtatwork.org/
+</p>
+    {# {% import 'macros/nav-macro.njk' as nav %}
     {{nav.active('home')}}
     <div class="container">
         {% include "partials/comingSoon-modal.njk" %}
         {% include "partials/home.njk" %}
         {% include "partials/cardKeynoteSpeaker.njk" %}
         {% include "partials/footer.njk" %}
-    </div>
+    </div> #}
 {% endblock %}

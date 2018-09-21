@@ -138,7 +138,7 @@
   	$stmt->close();
 
 
-  	$message = "Thank you for registering for Thought At Work, a design student conference to be held Oct 20-22, 2017, at Rochester Institute of Technology.\n\nThe following is the information you provided:\n\n";
+  	$message = "Thank you for registering for Thought At Work, a design student conference to be held Oct 20-22, 2018, at Rochester Institute of Technology.\n\nThe following is the information you provided:\n\n";
 
   	$message .= "Name: " . $firstname .  " " . $lastname . "\n";
   	$message .= "Address:\n";
@@ -151,7 +151,7 @@
     if($dietary != "") $message .= "Dietary Needs: " . $dietary . "\n";
   	if($interpreter != "") $message .= "Interpreter Requested: " . $interpreter . "\n";
   	$message .= "Amount Paid: $".$amount."\n";
-  	$message .= "\nVisit the conference website here: http://thoughtatwork.cias.rit.edu";
+  	$message .= "\nVisit the conference website here: http://thoughtatwork.org";
 
 
 
